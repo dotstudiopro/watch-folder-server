@@ -1,0 +1,29 @@
+{
+  "name": "dotstudiopro-watch-folder-server",
+  "version": "1.0.0",
+  "description": "Script to check a folder in S3 for new content and return it in MRSS format",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@dotstudioz.git.beanstalkapp.com:/dotstudioz/dotstudiopro-watch-folder-server.git"
+  },
+  "author": "Matt Armstrong (Stoic)",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.452.0",
+    "fs": "0.0.1-security",
+    "ioredis": "^4.9.3",
+    "jsontoxml": "^1.0.1",
+    "restify": "^8.3.2",
+    "restify-cors-middleware": "^1.1.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}

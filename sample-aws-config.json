@@ -1,0 +1,7 @@
+{
+	"accessKeyId": "AXXXXXXXXXXX",
+	"secretAccessKey": "some fake access key",
+	"region": "us-east-1",
+	"default_bucket": "your-bucket-here",
+	"folder": ""
+}

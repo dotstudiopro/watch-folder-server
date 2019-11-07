@@ -1,0 +1,8 @@
+{
+	"port": 3000,
+	"redis": {
+		"endpoint": "some-redis-cluster.redis-clusters-r-us.com",
+		"port": 12345,
+		"password": "some-redis-password"
+	}
+}
