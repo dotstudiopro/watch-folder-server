@@ -96,13 +96,13 @@ const getFeedData = (req, callback) => {
 						const json = {
 							"item": [{
 								"name": "title",
-								"text": obj.Key,
+								"text": obj.Key.replace('&', ''),
 							}, {
 								"name": "link",
 								"text": base_aws_url + bucketName + "/",
 							}, {
 								"name": "description",
-								"text": obj.Key + ", last modified: " + obj.LastModified,
+								"text": obj.Key.replace('&', '') + ", last modified: " + obj.LastModified,
 							}, {
 								"name": "guid",
 								"text": Buffer.from(obj.LastModified + obj.Key).toString('base64'),
@@ -117,7 +117,7 @@ const getFeedData = (req, callback) => {
 								},
 								"children": [{
 									"name": "media:title",
-									"text": obj.Key
+									"text": obj.Key.replace('&', '')
 								}]
 							}, ]
 						};
